@@ -19,7 +19,7 @@
     --scroll-thumb-color:hsl(var(--hue-color),12%,75%);
 
     --body-font: 'Open Sans', sans-serif; ;
-    --title-font: 'Poppins', sans-serif;;
+    --title-font: 'Poppins', sans-serif;
     --biggest-font-size:2.5rem ;
     --h1-font-size: 1.5rem;
     --h2-font-size:1.25rem ;
@@ -146,6 +146,7 @@ input{outline: none;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.8rem;
 }
 .nav_logo,.nav_toggle{
     color: var(--white-color);
