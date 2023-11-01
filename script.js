@@ -154,16 +154,20 @@ const sr=ScrollReveal({
     reset:true,
 })
 
-sr.reveal(`.home_data,.home_social-link,.home_info, .discover_container ,.experience_overlay ,.experience_data,.place_card,.sponser_content,.footer_rights,.footer_data`,{
+sr.reveal(`.home_data,.home_social-link,.home_info, .discover_container ,.experience_overlay ,.experience_data,.place_card,.sponser_content,.footer_rights,.footer_data ,.destinationInput`,{
     origin:'top',
-    interval:100,
+    interval:150,
 })
-sr.reveal(`.about_data,.video_description,.subscribe_description`,{
+sr.reveal(`.about_data,.video_description,.subscribe_description,.section_title`,{
     origin:'left'
 })
 sr.reveal(`.about_img-overlay,.video_content,.subscribe_form`,{
     origin:'right',
     interval:100,
+})
+sr.reveal(`.priceInput`,{
+    origin:'bottom',
+    interval:150,
 })
 
 // <========= Registration Part ===========>
