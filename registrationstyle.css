@@ -297,13 +297,23 @@ body.dark-theme{
      min-height: 29rem;
      background-color: aquamarine;
 }
-.form-text{
+.form-text_register{
     height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2016/11/22/22/21/adventure-1850912_1280.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+.form-text_signin{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2018/03/27/15/04/women-3266211_1280.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 3rem 2rem;
 }
