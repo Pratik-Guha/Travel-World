@@ -316,23 +316,23 @@ input{outline: none;}
 .cardDiv{
     position: relative;
     padding: 2rem 1rem ;
-    background: var(--white-color);
+    background: var(--text-color);
     border-radius: 10px;
     gap: 1rem;
 }
 .cardDiv label{
     display: block;
-    color: hsl(240,4%,36%);
+    color: var(--title-color);
     padding: 10px;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
 }
 .label_total{
     justify-content: space-between;
     align-items: center;
 }
 .total{
-    color:hsl(240,4%,36%) ;
+    color:var(--title-color) ;
     font-size: 18px;
     padding-bottom: 10px;
 }
@@ -729,6 +729,7 @@ input{outline: none;}
 .change-theme-name{
     font-size: var(--small-font-size);
 }
+
 body.dark-theme{
     --first-color-second:hsl(var(--hue-color),54%,12%) ;
     --title-color: hsl(var(--hue-color),24%,95%);
