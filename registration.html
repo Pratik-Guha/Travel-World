@@ -50,17 +50,16 @@
         </nav>
 
         <main class="main">
-            <section class="user-container login-section--display">
+            <section class="user-container login-section--display" id="userContainer">
                 <div class="registration">
                     <div class="grid-two--column">
                         <div class="form-text">
                             <h2>Welcome Back!</h2>
                             <p>To keep connected with us please login with your personal info</p>
-                            <button class="login-btn">
-                                Login Here
-                            </button>
+                            <button class="login-btn" onclick="showLogin()">Login Here</button>
                         </div>
                         <div class="registration-form">
+                            <!-- Registration form content -->
                             <h2>Create Account</h2>
                             <div class="social-icon">
                                 <a href="https://github.com/Pratik-Guha?tab=repositories" target="_blank">
@@ -107,12 +106,11 @@
                     <div class="grid-two--column">
                         <div class="form-text">
                             <h2>Hello, Friend!</h2>
-                            <p>Enter your personal details and start journey with us</p>
-                            <button class="registration-btn">
-                                Register Here
-                            </button>
+                            <p>Enter your personal details and start the journey with us</p>
+                            <button class="registration-btn" onclick="showRegistration()">Register Here</button>
                         </div>
                         <div class="login-form">
+                            <!-- Login form content -->
                             <h2>Sign In</h2>
                             <div class="social-icon">
                                 <a href="https://github.com/Pratik-Guha?tab=repositories" target="_blank" class="home_social-link">
@@ -153,6 +151,7 @@
                 </div>
             </section>
         </main>
+        
     </header>
     <script src="/scrollreveal.min.js"></script>
     <script src="/swiper-bundle.min.js"></script>

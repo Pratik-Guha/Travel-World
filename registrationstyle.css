@@ -105,10 +105,10 @@ button,input[type='submit']{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2016/01/09/18/27/journey-1130732_1280.jpg') no-repeat center center/cover;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    /* z-index: var=); */
     background-color: transparent;
     
 }
@@ -294,7 +294,7 @@ body.dark-theme{
 }
 .registration,.login{
      min-width: 40vw;
-     min-height: 30rem;
+     min-height: 29rem;
      background-color: aquamarine;
 }
 .form-text{
