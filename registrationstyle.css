@@ -134,6 +134,9 @@ button,input[type='submit']{
 }
 
 @media screen and (max-width:767px){
+    .nav{
+        font-size: 1.7rem;
+    }
     .nav_menu{
         position: fixed;
         background-color: var(--body-color);
@@ -250,6 +253,8 @@ body.dark-theme{
     }
     .nav_toggle,.nav_close,.change-theme-name{
         display: none;
+        
+       
     }
     
     .scroll-header .nav_link{
@@ -381,4 +386,24 @@ input[type="submit"]{
 }
 .login-section--display .login{
     display: none;
+}
+
+/* <========== smal devices ===================> */
+@media screen and (max-width:768px){
+    .grid-two--column{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .registration,.login{
+        min-width: 30vw;
+        min-height: 20rem;
+        
+   }
+   .main{
+    margin: 2rem auto;
+    overflow-x: hidden;
+    min-height: 60vh;
+   
+    }
+   
 }
