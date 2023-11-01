@@ -312,6 +312,59 @@ input{outline: none;}
     background: none
 }
 /* <========Home section ends here =======> */
+/* <============== Search section starts here ===============> */
+.cardDiv{
+    position: relative;
+    padding: 2rem 1rem ;
+    background: var(--white-color);
+    border-radius: 10px;
+    gap: 1rem;
+}
+.cardDiv label{
+    display: block;
+    color: hsl(240,4%,36%);
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.label_total{
+    justify-content: space-between;
+    align-items: center;
+}
+.total{
+    color:hsl(240,4%,36%) ;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.cardDiv  input{
+    /* height: 40px;
+    padding: 0 1rem;
+    background: rgb(239,239,239);
+    border-radius: 3rem; */
+}
+.searchOptions{
+    position: relative;
+    background: linear-gradient(to right ,hsl(187,85%,43%),hsl(199,100%,33%)) ;
+    width: max-content;
+    bottom: 2.7rem;
+    column-gap: .8rem;
+    padding: 5px 1rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.searchOptions:hover{
+    background: hsl(199,100%,33%);
+}
+.searchOptions .search_icons{
+    font-size: 18px;
+}
+.searchOptions  span{
+    font-size: 13px;
+}
 /* <========About section starts here =======> */
 
 .about_data{
@@ -727,6 +780,9 @@ body.dark-theme{
         width: 470px;
         margin: 0 auto;
     }
+    .cardDiv{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media screen and (min-width:768px){
     body{
@@ -829,6 +885,10 @@ body.dark-theme{
     .footer_rights{
         flex-direction: row;
         justify-content: space-between;
+    }
+    .cardDiv{
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(3,1fr);
     }
 }
 @media screen and (min-width:1024px){
