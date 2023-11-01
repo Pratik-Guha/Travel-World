@@ -294,7 +294,7 @@ body.dark-theme{
 }
 .registration,.login{
      min-width: 40vw;
-     min-height: 25rem;
+     min-height: 30rem;
      background-color: aquamarine;
 }
 .form-text{
@@ -362,4 +362,13 @@ input[type="submit"]{
     min-width: 10rem;
     background-color: var(--var-primary-color);
     color: var(--white-color);
+}
+.registration:not(.login-section--display){
+    display: none;
+}
+.login-section--display  .registration{
+    display: block;
+}
+.login-section--display .login{
+    display: none;
 }
