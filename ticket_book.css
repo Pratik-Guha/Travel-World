@@ -3,7 +3,7 @@
     --SecondaryColor:hsl(180,17%,95%);
     --colorOne:hsl(15,74%,70%);
     --colorTwo:hsl(28,100%,82%);
-    --HoverColor:hsl(28,100%,82%);
+    --HoverColor:hsl(230, 55%, 40%);
     --whiteColor:hsl(0,0%,100%);
     --blackColor:hsl(0,0%,12%);
     --textColor:hsl(240,1%,48%);
@@ -14,7 +14,164 @@
     --inputColor:hsl(330,12%,97%);
     --boxShadow: box-shadow:rgba(0,0,0,0.1) 0px 10px 15px -3px ,rgba(0,0,0,0.05) 0px 4px 6px -2px;
     --transition:.4s ease-in-out;
+    --body-color:hsl(190,100%,99%);
 }
+
+
 body{
-    background: var(--greyText);
+    background: var(--body-color);
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--greyText);
+}
+.btn{
+    padding: .7rem 1.5rem;
+    background-color: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background: var(--HoverColor);
+}
+/* <============ home Section starts here ======================> */
+.ticket_home{
+    padding-top: 5rem;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+.ticketImages{
+    width: 100%;
+    margin: 1rem auto 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5rem;
+}
+.videoDiv{
+    width: 100%;
+}
+.video{
+    border-radius: 10rem;
+}
+.plane{
+    position: absolute;
+    /* width: 100%; */
+    top: -10%;
+}
+/* <============== Search Section satrs here ===================> */
+
+.sectionContainer{
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid var(--greyBg);
+    border-radius: 2rem;
+    row-gap: 2rem;
+}
+.btns{
+    background: var(--SecondaryColor);
+    padding: .5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+.singleBtn{
+    padding: .8rem 1.5rem;
+    font-size: 13px;
+    border-radius: 3rem;
+    width: 80%;
+    text-align: center;
+}
+.searchInputs{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.iconDiv{
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.ticket_icons{
+    color: var(--blackColor);
+    opacity: .7;
+}
+.texts h4{
+    padding-top: 0;
+    padding-bottom: .7rem;
+    color: var(--blackColor);
+    font-weight:700;
+    display: flex;
+}
+/* <================== Info Section ====================> */
+.info{
+    background: var(--SecondaryColor);
+}
+.titleDiv{
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.cardsDiv{
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.singleCard{
+    background: var(--whiteColor);
+    padding: 2rem 2rem;
+    border-radius: 10rem;
+    gap: 1rem;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    max-width: 250px;
+    width: 90%;
+    
+}
+.singleCard .iconDiv{
+    justify-content: center;
+    margin: auto;
+    background: var(--PrimaryColor);
+    width: max-content;
+    height: 55px;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+.singleCard .iconDiv .ticket_icons{
+    color: var(--whiteColor);
+}
+.cardTitle{
+    color: var(--blackColor);
+    font-weight: 700;
+}
+/* <========== dark theme ================> */
+body.dark-theme{
+    --textColor:hsl(240,1%,48%);
+    --body-color:hsl(190,29%,12%);
 }
