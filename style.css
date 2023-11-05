@@ -6,7 +6,7 @@
 
     --hue-color: 190;
 
-    --first-color:hsl(var(--hue-color),64%,22%);
+    --first-color:hsla(222, 47%, 46%, 0.858);
     --first-color-second:hsl(var(--hue-color),64%,22%) ;
     --first-color-alt: hsl(var(--hue-color),64%,15%);
     --title-color: hsl(var(--hue-color),64%,18%);
@@ -336,12 +336,7 @@ input{outline: none;}
     font-size: 18px;
     padding-bottom: 10px;
 }
-.cardDiv  input{
-    /* height: 40px;
-    padding: 0 1rem;
-    background: rgb(239,239,239);
-    border-radius: 3rem; */
-}
+
 .searchOptions{
     position: relative;
     background: linear-gradient(to right ,hsl(187,85%,43%),hsl(199,100%,33%)) ;
@@ -503,66 +498,109 @@ input{outline: none;}
 }
 /* <========Video section ends here =======> */
 /* <========Place section starts here =======> */
-
-.place_card,.place_img{
-    height: 230px;
-}
 .place_container{
-    grid-template-columns: repeat(2,max-content);
-    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
-.place_card{
-    position: relative;
-    overflow: var(--img-hidden);
+.place_icon{
+    font-size: 2rem;
+    cursor: pointer;
 }
-.place_content,.place_title{
-    color: var(--white-color);
-}
-.place_content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: .75rem .75rem 1rem;
-}
-.place_rating{
-    align-self: flex-end;
+.flex{
     display: flex;
     align-items: center;
 }
-.place_rating-icon{
-    font-size: .75rem;
-    margin-right: var(--mb-0-25);
+.place_grid{
+    display: grid;
+    align-items: center;
 }
-.place_rating-number{
-    font-size: var(--small-font-size);
+.secIntro{
+	max-width:70%;
+	text-align:center;
+	margin:0 auto 2rem;
 }
-.place_subtitle,.place_price{
-    display: block;
+.btn{
+    padding: .7rem 1.5rem;
+    background-color: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    
 }
-.place_title{
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-25);
+.mainContent{
+    gap: 1rem;
+
 }
-.place_subtitle{
-    font-size:var(--smaller-font-size);
-    margin-bottom: var(--mb-1-25);
+.singleOffer{
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: .4rem;
+    box-shadow: 0 2px 8px 2px rgba(178,178,178,0.189);
 }
-.place_button{
+.singleOffer small{
+    font-weight: 500;
+}
+.destImage{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.destImage img{
+    height: 100%;
+    width: 100%;
+}
+.discount{
     position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: .75rem 1rem;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background: rgb(255, 0, 64);
+    color: var(--white-color);
+    border-radius: 3rem;
+    font-size: 10px;
+    font-weight: 500;
 }
-.place_img{
-    transition: var(--img-transition);
+.offerBody{
+    padding: 1rem;
 }
-.place_card:hover .place_img{
-    transform: var(--img-scale);
+.price{
+    justify-content: space-between;
+}
+.price h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.amenities{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: .9rem 0;
+    gap: .5rem;
+}
+.singleAmenity{
+    padding: 3px 10px;
+    border-radius: 5px;
+    background: var(--input-color);
+    gap: .5rem;
+}
+.singleOffer .btn{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: .6rem;
+    font-weight: 600;
+    gap: .5rem;
+    color: var(--text-color);
+}
+.singleOffer .btn .icon{
+    color: var(--text-color);
+}
+.singleOffer:hover{
+    transform: translateY(-7px);
 }
 /* <========Place section ends here =======> */
 /* <========Susbscribe  section starts here =======> */
@@ -972,3 +1010,20 @@ body.dark-theme{
         height: 640px;
     }
 }
+@media screen and (min-width:556px){
+    .mainContent{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:884px){
+    .mainContent{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (min-width:1240px){
+    .place_container{
+        width: 75% !important;
+        margin: auto !important;
+    }
+}
+

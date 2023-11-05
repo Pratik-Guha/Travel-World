@@ -281,7 +281,21 @@ body{
 
 
 /* <========== dark theme ================> */
-body.dark-theme{
-    --textColor:hsl(240,1%,48%);
-    --body-color:hsl(190,29%,12%);
+body.dark-theme {
+    --PrimaryColor: hsl(225, 50%, 70%); /* Modify the colors for dark mode as needed */
+    --SecondaryColor: hsl(180, 17%, 15%);
+    --colorOne: hsl(15, 74%, 70%);
+    --colorTwo: hsl(28, 100%, 82%);
+    --HoverColor: hsl(230, 55%, 40%);
+    --whiteColor: hsl(0, 0%, 12%);
+    --blackColor: hsl(0, 0%, 100%);
+    --textColor: hsl(240, 1%, 95%);
+    --borderColor: hsl(0, 0%, 30%);
+    --whiteColorDeam: hsl(0, 0%, 20%);
+    --greyBg: hsl(0, 0%, 25%);
+    --greyText: hsl(0, 0%, 70%);
+    --inputColor: hsl(330, 12%, 30%);
+    --boxShadow: box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px, rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
+    --transition: 0.4s ease-in-out;
+    --body-color: hsl(190, 100%, 10%);
 }
