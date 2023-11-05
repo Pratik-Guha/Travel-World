@@ -551,6 +551,10 @@ input{outline: none;}
 .destImage img{
     height: 100%;
     width: 100%;
+    transition: var(--img-transition) ;
+}
+.destImage img:hover{
+   transform: var(--img-scale);
 }
 .discount{
     position: absolute;
