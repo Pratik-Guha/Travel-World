@@ -85,9 +85,14 @@ body{
     border-radius: 2rem;
     row-gap: 2rem;
 }
+.flight_class{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 .btns{
     background: var(--SecondaryColor);
-    padding: .5rem;
+    padding: .5rem 0;
     border-radius: 1rem;
     flex-direction: column;
     margin: auto;
@@ -99,6 +104,7 @@ body{
     border-radius: 3rem;
     width: 80%;
     text-align: center;
+    
 }
 .searchInputs{
     width: 100%;
@@ -305,6 +311,11 @@ body.dark-theme {
     .cardsDiv{
         grid-template-columns: repeat(2,1fr);
     }
+    .searchInputs{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1);
+    }
 }
 @media screen  and (min-width:756px){
     .cardsDiv{
@@ -313,5 +324,9 @@ body.dark-theme {
     }
     .travelersContainer{
         grid-template-columns: repeat(3,1fr);
+    }
+    .searchInputs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
