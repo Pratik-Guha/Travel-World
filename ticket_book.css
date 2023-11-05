@@ -104,7 +104,11 @@ body{
     border-radius: 3rem;
     width: 80%;
     text-align: center;
+    cursor: pointer;
     
+}
+.singleBtn:hover{
+    opacity: 0.5;
 }
 .searchInputs{
     width: 100%;
@@ -328,5 +332,9 @@ body.dark-theme {
     .searchInputs{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .searchInputs .button{
+        width: 30%;
+        padding: 1rem 1rem;
     }
 }
