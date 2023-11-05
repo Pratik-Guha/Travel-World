@@ -174,8 +174,8 @@ body{
  .travelers .travelersContainer{
     margin-top: 1rem;
     gap: 1.5rem;
-    display: flex;
-    flex-direction: row;
+   display: grid;
+   grid-template-columns: repeat(1);
 }
 
 .allTraveler{
@@ -277,9 +277,11 @@ body{
 .allTraveler:hover .travelerDetails {
     opacity: 1;
 }
-/* <========== uijkbibui===========> */
+/* <==========  Booking ===========> */
 
-
+.singleOffer .btn{
+    background: var(--colorOne);
+}
 /* <========== dark theme ================> */
 body.dark-theme {
     --PrimaryColor: hsl(225, 50%, 70%); /* Modify the colors for dark mode as needed */
@@ -298,4 +300,18 @@ body.dark-theme {
     --boxShadow: box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px, rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
     --transition: 0.4s ease-in-out;
     --body-color: hsl(190, 100%, 10%);
+}
+@media screen  and (min-width:556px){
+    .cardsDiv{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen  and (min-width:756px){
+    .cardsDiv{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .travelersContainer{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
