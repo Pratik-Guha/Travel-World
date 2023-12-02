@@ -103,7 +103,7 @@ button,input[type='submit']{
 
 .registration-header{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2016/01/09/18/27/journey-1130732_1280.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.306),rgba(0, 0, 0, 0.361)), url('https://cdn.pixabay.com/photo/2016/01/09/18/27/journey-1130732_1280.jpg') no-repeat center center/cover;
     width: 100%;
     position: absolute;
     top: 0;
@@ -171,7 +171,11 @@ button,input[type='submit']{
     color: var(--title-color);
     cursor: pointer;
 }
-
+.nav_logo img {
+    width: 150px;
+    height: 110px;
+    z-index: 2;
+}
 .show-menu{
     right: 0;
 }

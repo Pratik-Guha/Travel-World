@@ -161,6 +161,10 @@ input{outline: none;}
 .nav_menu{
     position: relative;
 }
+.nav img{
+    width: 150px;
+    height: 110px;
+}
 
 @media screen and (max-width:767px){
     .nav_menu{
@@ -186,9 +190,10 @@ input{outline: none;}
     color: var(--text-color-light);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
 }
-.nav_link:hover{
-    color: var(--text-color);
+.nav_link :hover{
+    color: rgba(0, 0, 0, 0.7);
 }
 .nav_close {
     position: absolute;
