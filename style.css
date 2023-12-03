@@ -152,7 +152,9 @@ input{outline: none;}
     color: var(--white-color);
 }
 .nav_logo{
-    font-weight: var(--font-semi-bold);
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: -1px;
 }
 .nav_toggle{
     font-size: 1.2rem;
