@@ -40,7 +40,7 @@ body{
 }
 .btn{
     padding: .7rem 1.5rem;
-    background-color: var(--PrimaryColor);
+    /* background-color: var(--PrimaryColor); */
     border: none;
     outline: none;
     border-radius: 3rem;
@@ -48,7 +48,7 @@ body{
     
 }
 .btn:hover{
-    background: var(--HoverColor);
+    background-color: blue;
 }
 /* <============ home Section starts here ======================> */
 .ticket_home{
@@ -91,7 +91,7 @@ body{
     grid-template-columns: repeat(3,1fr);
 }
 .btns{
-    background: var(--SecondaryColor);
+    background: var(--PrimaryColor);
     padding: .5rem 0;
     border-radius: 1rem;
     flex-direction: column;
@@ -100,9 +100,10 @@ body{
 }
 .singleBtn{
     padding: .8rem 1.5rem;
-    font-size: 13px;
+    font-size: 18px;
     border-radius: 3rem;
     width: 80%;
+    font-weight: 700;
     text-align: center;
     cursor: pointer;
     
@@ -198,7 +199,9 @@ body{
     gap: 1rem;
     margin: auto;
 }
-
+.plane_book_title{
+    line-height: 1px;
+}
 /* .destinationImage ,.travelerImage,.travelerName{
     position: absolute;
 } */
@@ -292,6 +295,9 @@ body{
 .singleOffer .btn{
     background: var(--colorOne);
 }
+.singleOffer .btn:hover{
+    background-color: var( --colorTwo);
+}
 /* <========== dark theme ================> */
 body.dark-theme {
     --PrimaryColor: hsl(225, 50%, 70%); /* Modify the colors for dark mode as needed */
@@ -309,7 +315,7 @@ body.dark-theme {
     --inputColor: hsl(330, 12%, 30%);
     --boxShadow: box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px, rgba(255, 255, 255, 0.05) 0px 4px 6px -2px;
     --transition: 0.4s ease-in-out;
-    --body-color: hsl(190, 100%, 10%);
+    --body-color: hwb(189 0% 80%);
 }
 @media screen  and (min-width:556px){
     .cardsDiv{

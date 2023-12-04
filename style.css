@@ -139,6 +139,8 @@ input{outline: none;}
     left: 0;
     z-index: var(--z-fixed);
     background-color: transparent;
+    height: 3rem;
+
 }
 
 .nav{
@@ -163,10 +165,7 @@ input{outline: none;}
 .nav_menu{
     position: relative;
 }
-.nav img{
-    width: 150px;
-    height: 110px;
-}
+
 
 @media screen and (max-width:767px){
     .nav_menu{
@@ -846,7 +845,7 @@ body.dark-theme{
         text-transform: initial;
     }
     .nav_link:hover{
-        color: var(--white-color);
+        opacity: 0.6;
     }
     .nav_dark{
         position: initial;
