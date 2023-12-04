@@ -86,7 +86,6 @@ body{
     row-gap: 2rem;
 }
 .flight_class{
-    
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -106,6 +105,7 @@ body{
     font-weight: 700;
     text-align: center;
     cursor: pointer;
+    display: flex;
     
 }
 .singleBtn:hover{
@@ -326,6 +326,25 @@ body.dark-theme {
         align-items: center;
         grid-template-columns: repeat(1);
     }
+    
+    
+}
+@media screen and (max-width-450px) {
+    .singleBtn{
+        font-size: 13px;
+        font-weight: 300;
+        padding: .2rem ;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+    .btns{
+        padding: .2rem 0
+        
+    }
+
+    
 }
 @media screen  and (min-width:756px){
     .cardsDiv{
